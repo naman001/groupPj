@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ClinicApi",
+    "\\ClinicApi\\Controllers",
+    "\\WebClient",
+    "\\WebClient\\Views",
+    "\\WebClient\\Views\\MedicalExam"
+  ],
+  "SelectedNode": "\\WebClient\\Views\\MedicalExam\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}
