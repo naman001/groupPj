@@ -4448,7 +4448,7 @@
     "Syncfusion.Licensing/18.4.0.30": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mz7sxnb0csWmckA1Oq7uSwMtV+sF8vmeo2L/N38uvnwsZb4LLSXPm9W6+OoKylNL5WUnwSRbwn+Fk/+elRpdBQ==",
+      "sha512": "sha512-HuWxdSyLgkyWeFeCrrFXNNIPZCb5t6KmxVNIMRXBKq6PRJ0XoXp+JQMCL+1l4s78jSdt+cajcrTJoxmEhP8DmA==",
       "path": "syncfusion.licensing/18.4.0.30",
       "hashPath": "syncfusion.licensing.18.4.0.30.nupkg.sha512"
     },

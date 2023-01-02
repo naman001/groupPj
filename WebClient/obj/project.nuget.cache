@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fuy4mlAR1u90aCpmvu6Gm4h++ZHr3ZbK1M7ztzvheze1N1uM79xrHcRxFotLZr+d9qhI6vjSxSwJf4q7pQiOgg==",
+  "dgSpecHash": "YDowTkj+/6XuBI62wQlw7uBoVnr3bhP7ZvhKS4nkvizqozB/xJSlcZcufqLSBvZCBDy2T+xLgUDuLm5CcdhaOw==",
   "success": true,
-  "projectFilePath": "D:\\FPTFinalProject\\ProjectPrn231\\WebClient\\WebClient.csproj",
+  "projectFilePath": "D:\\groupPj\\grPj\\groupPj\\WebClient\\WebClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\namtr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\namtr\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

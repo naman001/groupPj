@@ -161,7 +161,7 @@
                     eventLimit: true,
                     eventColor: '#378006',
                     events: events,
-                    eventClick: function (event, jsEvent, view) {
+                    /*eventClick: function (event, jsEvent, view) {
                         selectedEvent = event;
                         $('#modalTitle').html(event.title);
                         var $description = $('<div/>');
@@ -174,7 +174,7 @@
                         $('#eventUrl').attr('href', event.url);
                         $('#fullCalModal').modal();
                         return false;
-                    },
+                    },*/
                     selectable: true,
                     select: function (start, end) {
                         selectedEvent = {
@@ -188,6 +188,10 @@
                         };
                         OpenAddForm();
                         $('#calendar').fullCalendar('unselect');
+                    },
+                    //this function is used to allow user just select 1 day at a time
+                    selectAllow: function (event) {
+                        return moment(event.start).utcOffset(false).isSame(moment(event.end).subtract(1, 'second').utcOffset(false), 'day');
                     }
                 })
             }
@@ -201,7 +205,7 @@
                 $('#txtDescription').val(selectedEvent.description);
                 $('ddThemeColor').val(selectedEvent.color);
                 }*@
-                console.log(selectedEvent.start.format('DD-MM-YYYY'));
+                    console.log(selectedEvent.start.format('DD-MM-YYYY'));
                 var timeSlot = $('#timeSlot').val();
                 var timeSplit = timeSlot.split(",");
                 console.log(timeSplit);
@@ -230,22 +234,17 @@
                 return;
                 }
                 }*@
-                var date = selectedEvent.start.format('YYYY-MM-DD');
+                        var date = selectedEvent.start.format('YYYY-MM-DD');
                 var timeSlot = $('#timeSlot').val();
                 var timeSplit = timeSlot.split(",");
                 var data = {
-                    //id: $('#hdEventId').val().trim(),
                     title: $('#txtSubject').val().trim(),
                     description: $('#txtDescription').val(),
                     start: date + timeSplit[0],
                     end: date + timeSplit[1],
-                    @*start: $('#txtStart').val().trim(),
-                    end: $('#txtEnd').val().trim(),*@
                     color: $('#ddThemeColor').val(),
                     allDay: false
                 }
-                console.log("start date: " + data.start),
-                console.log("end date: " + data.end),
                 SaveEvent(data);
             })
             function SaveEvent(data) {
@@ -265,6 +264,7 @@
                     }
                 })
             }
+
         })
         @*var events = [];
         var selectedEvent = null;
